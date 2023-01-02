@@ -1,14 +1,23 @@
 package objects;
 
 public class Rectangle {
-    double length;
-    double width;
+    private double length;
+    private double width;
 
-    double calculatePerimeter(){
+    public Rectangle(){
+        length = 0;
+        width = 0;
+    }
+    public Rectangle(double length, double width){
+        setLength(length);
+        setWidth(width);
+    }
+
+    public double calculatePerimeter(){
         return (2*length) + (2*width);
     }
 
-    double calculateArea(){
+    public double calculateArea(){
         return length*width;
     }
 
